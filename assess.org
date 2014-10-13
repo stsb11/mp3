@@ -1,0 +1,33 @@
+#+STARTUP:indent
+#+STARTUP: align
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+BEGIN_COMMENT
+#+STYLE: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+STYLE: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+END_COMMENT
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
+#+TITLE: Eco-Speaker
+
+* Badge-It Tasks
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Criteria
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+| <20>                 | <20>                 | <20>                 | <20>                 |
+| Criteria             | Silver               | Gold                 | Platinum             |
+|----------------------+----------------------+----------------------+----------------------|
+| Eco-Warrior          | Explain the difference between renewable and non-renewable materials, giving examples | Choose a product (e.g. mobile 'phone), and evaluate its Social, Moral, Environmental and Sustainability. |                      |
+|----------------------+----------------------+----------------------+----------------------|
+| Audiophile           | Identify the impact of changing frequency and amplitude of a soundwave | Explain how sound is produced by a loudspeaker |                      |
+|----------------------+----------------------+----------------------+----------------------|
+| Makey-Makey          | Demonstrate neat soldering skills | Consistently prepare and dress the wiring correctly. |                      |
+|----------------------+----------------------+----------------------+----------------------|
+| Playa'               | Create a working stereo amplifier | Integrate the speaker circuit into a pre-used housing | Show exceptional originality, creativity and a high degree of skill to elegently create the speaker system |
+|----------------------+----------------------+----------------------+----------------------|
+| Profiler             | List three characteristics of the target audience for the upcycled speaker. | Write a detailed profile of the target audience for the speaker |                      |
+|----------------------+----------------------+----------------------+----------------------|
+| Judgement Day        | Evaluate the finished product, and identify how it could be improved. | Evaluate your own performance in this project, and set targets for future work. |                      |
