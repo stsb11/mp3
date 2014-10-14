@@ -1,0 +1,116 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
+#+TITLE: Making Noises
+#+AUTHOR: Stephen Brown
+
+#+BEGIN_HTML
+<div class=ribbon>
+<a href="https://github.com/stsb11/mp3">Fork me on GitHub</a>
+</div>
+#+END_HTML
+
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+
+* Sound Theory
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+A biologist called [[http://simple.wikipedia.org/wiki/Thomas_Henry_Huxley][Thomas Huxley]] said that people should try to learn something about everything, and everything about something. As we're making a speaker system, its probably wise that we take a moment to consider how sound is produced by a speaker. This will have the added advantage of helping you study for GCSE Science.  
+** Making noises
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Sound is a mechanical wave; it needs a medium (e.g. air or water) to travel through. When an object (e.g. a tuning fork) vibrates, if pushes the air in front of it away from itself repeatedly. The pushed air molecules go on to push the particles they are near to, and in turn they push the next particles and so on.
+- The more aggressively the output source moves, the more the air is disturbed, and the louder the resulting sound. 
+- The faster the vibrations from thte sound source, the closer together the air pressure waves, and the higher the pitch of the sound to the person hearing it.
+- If you're interested in reading more, sound is explained really well over at [[http://www.physicsclassroom.com/class/sound/Lesson-1/Sound-is-a-Mechanical-Wave][the Physics Classroom]].
+** Speakers
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+[[./img/speaker_sys.jpg]]
+- A speaker attempts to reproduce recorded sounds, by matching the intensity and speed of the original sound wave. Humans can hear sound in the range of around 20Hz - 20kHz. The ability to hear the highest-pitched sounds fades slightly through adulthood. 
+- No single speaker can reproduce the full range of sound that humans can hear, so in hi-fi sound systems, there are a variety of different speakers used.
+- **Sub-woofers** are physically large speakers, which can create powerful sound pressure levels (due to their size), but cannot move fast enough to reproduce high frequencies. These are used to create powerful bass sounds, in the 20Hz-200Hz range.
+- **Mid-range drivers** are the most common type of speaker, and are used in the project you will create. They cover a wide range of the sound frequency range, from 300 to about 5000Hz, which contains the range of most musical instruments and human voice. Most TVs use a pair of these for their built-in speakers. 
+- A **Tweeter** is a high-frequency driver to produce high-pitched sounds (typically 2000Hz-20,000Hz), and are named after the sounds of birdsong. These are typically very small, so that they can move quickly. By combining different speakers in a sound system such as that found in a cinema, excellent sound reproduction can be achieved. 
+[[./img/speaker_pic.png]]
+- The most common type of speaker (a dynamic loudspeaker) is shown above. These work by the use of a permenant magnet (1) sat at the bottom of the speaker, which pulls/repels an electromagnet called the voicecoil (2) when a current is applied to it. This is held in place by a suspension (3) system, which keeps the coil centred in the gap in the magnet, and ensures the coil returns to a neutral position when there is no signal being sent to it. The voicecoil is glued to a paper diaphram (4), which is what pushes air particles as it is quickly turned on and off. 
+
+** Badget - Speaker Technology
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+- Open your Word document that you previously wrote about sustainability in, and add a new sub-heading: Sound.
+- Copy and paste the picture of the speaker system at the top of this section.
+- Underneath it, explain in your own words how a loudspeaker works.
+- Underneath this, identify which speaker is which in the photo you copied and pasted. For each:
+        - Say why you think that is. For instance, you might say that the top speaker in the left and right enclosures are tweeters, because they are very small.
+        - Explain what the benefit of having this type of speaker is.
+- Find another picture of a sound system online ([[http://www.argos.co.uk/][Argos]] have a good range), and idenfity the speakers in it.
+
+[[./index.html][Return to homepage]]

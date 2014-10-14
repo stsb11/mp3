@@ -1,0 +1,155 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+BEGIN_COMMENT
+#+STYLE: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+STYLE: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+END_COMMENT
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
+#+TITLE: Social, Moral, Environmental and Sustainability Issues (SMES)
+#+AUTHOR: Stephen Brown
+
+#+BEGIN_HTML
+<div class=ribbon>
+<a href="https://github.com/stsb11/mp3">Fork me on GitHub</a>
+</div>
+<center>
+<img src='img/forest.jpg' width=33%>
+</center>
+#+END_HTML
+
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+
+e* Introduction
+[[file:img/pic.jpg]]
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: intro
+:END:
+** What are PIC chips?
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+Peripheral Interface Controllers are small silicon chips which can be programmed to perform useful tasks.
+In school, we tend to use Genie branded chips, like the C08 model you will use in this project. Others (e.g. PICAXE) are available.
+PIC chips allow you connect different inputs (e.g. switches) and outputs (e.g. LEDs, motors and speakers), and to control them using flowcharts.
+Chips such as these can be found everywhere in consumer electronic products, from toasters to cars. 
+
+While they might not look like much, there is more computational power in a single PIC chip used in school than there was in the space shuttle that went to the moon in the 60's!
+** When would I use a PIC chip?
+Imagine you wanted to make a flashing bike light; using an LED and a switch alone, you'd need to manually push and release the button to get the flashing effect. A PIC chip could be programmed to turn the LED off and on once a second.
+In a board game, you might want to have an electronic dice to roll numbers from 1 to 6 for you. 
+In a car, a circuit is needed to ensure that the airbags only deploy when there is a sudden change in speed, AND the passenger is wearing their seatbelt, AND the front or rear bumper has been struck. PIC chips can carry out their instructions very quickly, performing around 1000 instructions per second - as such, they can react far more quickly than a person can. 
+* Introduction
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+- When designing and creating new products, it is important to consider the wider issues around the product. 
+** Social Issues
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- The Social impact of a product is how its use and creation affects the community around it. Some of these will be positive, and often, some aspects may be negative.
+- Imagine you were inventing a new device to feed pets automatically when homeowners are away for a few days.
+- This would help the users of the product, as they are able to be confident their pet is going to be looked after while they go away for a weekend. They'd be able to enjoy better social interaction, and get away without having to spend money on boarding kennels. The owners would consider this an advantage.
+- If the product was very successful, boarding kennels would see a reduction in business, which could see them ultimately go out of business; they'd see this as a threat to their business.
+** Moral Issues
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Moral issues are those which describe a products ability to do good or bad, depending on how they are used.
+- Knives have been used for thousands of years. A knife itself is a tool; neither good or bad.
+- They are great for cutting up food, chopping back plants, as works of art and for carving patterns. Without knives, civilization would have struggled to develop - as tools, knives can be considered to be a good thing in this respect.
+- At the same time, knives can be used as weapons. Many murders and crimes have taken place for as long as knives have existed, as well as sometimes accidents. 
+- Designers creating knives for very small children to use can take this into account. They make knifes without sharp blades, and with rounded ends, and from soft plastics which can withstand chewing. Folding knives for explorers come with locking blades, so that they can't be accidentally closed on the fingers of the person holding them. 
+- Using our pet feeder, one could argue that if the device were designed to feed a pet for up to a year, this might lead to the pet feeling very lonely and isolated. Used in this way, it could be used to facilitate animal cruelty!
+
+** Environmental and Sustainability Issues
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Environmental and Sustainability refers to both the materials a product is made from, and the impact its use has on the envionment. 
+- A plastic novelty from a fast-food restaurant running on [[http://en.wikipedia.org/wiki/Button_cell][coin-cell]] batteries might be entertaining for a few days. Unfortunately, plastic trinkets such as these are difficult to recycle, and the manufacture of batteries uses up additional non-renewable materials and energy. 
+- These could be improved by making the toys from a bio-degrable plastic (such as PLA, which we use in our 3D printer), or from a wood-derived product. 
+- Using the example of our pet feeder, the designer could include a number of features to help improve its environmental impact. Parts such as a food tray could easily be damaged (dogs can be rather destructive) - if the food tray was designed to be easily removed and replaced, the life of the product could be increased.
+- If the product could be designed to run both from the mains rather than from batteries, reducing the number of batteries that would need to be sent to landfill. Better still, the unit could contain a rechargable battery, so that if there is a power cut while the owners are away, the pet will still be fed.
+- The manufacturer could wait several years before bringing out an improved model. This way, customers wouldn't feel pressured to buy the latest model every year. By also ensuring that spare parts are available on the company's website, they could help ensure the customer could keep using the product for many years. 
+
+* BadgeIt - Eco-Warrior Gold
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Your turn
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+- Open your Sustainability document that you created in the previous task
+- Write short definitions of the terms, "Social", "Moral" and "Environmental/Sustainabile"
+- Choose one of the following products, and write an analysis of it in terms of its SMES. 
+    - Humane Mousetrap
+    - Automatic curtain openers (push a button to open/close)
+    - Robot arm to prepare frozen pizzas
+    - Mobile 'phone
+
+[[file:index.html][Return to homepage]]
