@@ -116,5 +116,5 @@ Wires in electronic projects are one of the most common areas of product failure
 - Pass the stripped end of the red wire through the + lug, wrap the loose end of the wire around the lug. Now use the soldering iron to solder the wire in place. Repeat with the black wire and the - end.
 - Do the same for the other speaker.
 [[./img/build/18.jpg]]
-
+- This is a good time to get a TDA2822M Stereo Amplifier IC from the teacher, and insert it into the chip carrier. **Make sure the notch in the top of the chip lines up with the notch in the chip carrier (and on the PCB)!**
 [[file:index.html][Return to homepage]]
