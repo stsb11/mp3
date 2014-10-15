@@ -2,15 +2,16 @@
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 #+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
 #+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
-#+TITLE: PIC to PC Communication
+#+TITLE: Soldering Time
 #+AUTHOR: Stephen Brown
 
 #+BEGIN_HTML
 <div class=ribbon>
-<a href="https://github.com/stsb11/pic_programmer">Fork me on GitHub</a>
+<a href="https://github.com/stsb11/mp3">Fork me on GitHub</a>
 </div>
 #+END_HTML
 
+[[./img/build/22.jpg]]
 * COMMENT Use as a template
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -75,46 +76,54 @@
 :HTML_CONTAINER_CLASS: save
 :END:
 
-* First Program
+* First steps
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-We've now got a working PCB that we can write software for. In this stage, we'll test some programs. 
-** Pushing a program to a PIC chip.
+This project uses an IC (Integrated Circuit) chip containing many transistors and other components. These work together to amplify weak incoming signals from your 'phone, mp3 player or computer, and to send these stronger signals out through a pair of speakers, giving a nice loud, clear, stereo sound. 
+** Start small
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: code
+:HTML_CONTAINER_CLASS: build
 :END:
-- Load Circuit Wizard, then open your FirstPIC.cwz program while your PCB is connected to the computer. Click the "Run Live" button, and your program will be uploaded after a few seconds. You can then unplug your PCB from the computer and remove the download cable. Whenever the PCB is powered up, it'll make the LEDs blink on and off.
+- When soldering a project together, it's best to start with the smallest physical components first. As with many projects, this will be your resistors. We've got a few different values we'll be using here. 
+- **Make sure you use the right ones in the right places!**
+- You'll need:
+  - 2x 4r7 Resistors (Yellow, Purple, Gold, Gold)
+  - 2x 10k Resistors (Brown, Black, Orange, Gold)
+  - 2x 100k Resistors(Brown, Black, Yellow, Gold)
+- Remember when soldering to keep your soldered joints neat! You should be a pro at soldering after three years, but here's a few tips to remember:
+  - The purpose of soldering is to join two metals together: The leg of the component, and the copper track on the PCB. This only works if **both** metals have been heated up before you try and put solder in to make the joint.
+  - After placing the soldering iron onto the PCB/leg, count to three in your head, then apply solder. This should be long enough to get the parts hot, but not so long that you burn the PCB tracks off. 
+  - Remember to use side-cutters after soldering to trim off the excess of the leg you no longer want. Before you do this, make sure that your components are fitted as tightly to the board as possible. You can always melt the solder again and use a long-nose plier to pull the component through a bit more if needed!
+  - A good soldered joint looks like a little volcano standing up slightly on the board. You shouldn't be able to see the drill-hole any more, and the solder shouldn't be spherical. 
+- Solder the resistors in standing on end, with the other leg draped down into the hole. This way, they'll take up less space on the PCB. When they're done, and you look at the PCB from the either end of the board (it's symetrical at this stage), it needs to look like this:
+[[./img/build/5.jpg]]
+[[./img/build/6.jpg]]
+- Let's do the chip carrier next. ICs like our amplifier don't really like getting hot, so by using a chip carrier (which is essentially a block of plastic with some metal legs in it), we can avoid ever having to expose the chip to any heat at all.
+- The chip carrier needs to go in the right way up. The Silkscreen in the component side of the PCB has a notch in it, as does the chip carrier (and the chip). Make sure the carrier sits flat against the PCB before you solder the first pin, and inspect it once its soldered. If need be, melt the solder and push the socket in so it sits as flat as possible. You don't want to need to de-solder all 8 pins if you get this wrong!
+[[./img/build/8.jpg]]
 
-** Debugging a program
+** Connecting Capacitors
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: test
+:HTML_CONTAINER_CLASS: build
 :END:
-- Connect the PCB back up to the computer, so it is connected in Circuit Wizard. Click "Debug Live", then the "Start" button.
-- Ignore what's happening on the left-hand side of the screen for a moment, and click on the option that says, "View several panels at once".
-- In debug mode, you can monitor exactly what your Genie chip is doing, and which instruction it is running in real-time. 
-- You can also see which inputs and outputs are turned on, and use this information to help fix any issues (bugs) in your code.
-- The jog-wheel (shown as a circle just above the "Close" button allows you to slow the speed at which the program runs. This can be handy when there's a lot going on. Try this now.
-- Remember that while you are debugging, you won't be able to control the left-most LED, which will blink constantly while you are working. As soon as your PCB isn't connected to the computer, it will behave as it should, though.
-* Analogue programming
+- Capacitors make up a large number of the components in our circuit, and perform a number of functions. As a stand-alone component, they build up a store of a small amount of electrical charge (measured in Farads), which is released into the circuit when needed. 
+- There are two different types of capacitor; Electrolytic/polarised (the black circular ones), and non-polarised. The polarised variety must be connected the right way around (you'll notice a + on the PCB silkscreen) - the non-polarised ones can be mounted either way round. 
+- Polarised capacitors have a row of minus (-) signs along the edge with the negative leg. Additionaly, before you use side-cutters on them, the positive leg is normally longer. 
+- Start with the 470\mu{}F capacitors (the largest), then the 100\mu{}F capacitors, making sure you get them the right way around. These go either side of the IC, and both the value and orientation are clearly labelled.
+[[./img/build/10.jpg]]
+- Add the lone 10\mu{}F capacitor next...
+[[./img/build/11.jpg]]
+- Then the two 10nF non-polarised capacitors. While it doesn't matter which way round they go, it looks more professional if they're both the same way up. Try to get them standing up nice and straight, too.
+[[./img/build/12.jpg]]
+- You've now completed the circuit components for the project. Next, we'll need to add the speakers, a battery clip and a socket to connect to your mobile.
+
+** BadgeIt - Build Stage 1
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
+:HTML_CONTAINER_CLASS: assess
 :END:
-** Calibrate It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: code
-:END:
-- Load up your "my analogue program.cwz" work that you produced in step 1.
-- Using the figures you obtained in step 3, modify the values of your analogue decision diamonds to make your program work.
-- You might want to use the "Calibrate Sensor" option again. Double-check that the mode is set to "2 inputs, 3 outputs (G0-G2)".
-- You might want to use the "Debug Live" feature to make sure the program is behaving how you expect before running live. 
-* Assessment Point
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
-:END:
-** Assessment Point
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: badge
-:END:
-- On your portfolio, add screenshots of your working analogue program, and write a few sentences describing how you modified your program, and the steps you took to ensure it worked correctly.
+- Take a photo of both sides of your PCB.
+- Open your previous Word document, and add a new sub-title called, "Soldering".
+- Add (and crop) the pictures of both sides of your board.
+- Underneath, write a short paragraph explaining what you have done so far.
 [[file:index.html][Return to homepage]]

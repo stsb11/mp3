@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Soldering Time</title>
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Soldering Time</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. First steps</a>
+<ul>
+<li><a href="#sec-1-1">Start small</a></li>
+<li><a href="#sec-1-2">Connecting Capacitors</a></li>
+<li><a href="#sec-1-3">BadgeIt - Build Stage 1</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class=ribbon>
+<a href="https://github.com/stsb11/mp3">Fork me on GitHub</a>
+</div>
+
+
+<div class="figure">
+<p><img src="./img/build/22.jpg" alt="22.jpg" />
+</p>
+</div>
+<div id="outline-container-sec-1" class="outline-2 activity">
+<h2 id="sec-1"><span class="section-number-2">1</span> First steps</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+This project uses an IC (Integrated Circuit) chip containing many transistors and other components. These work together to amplify weak incoming signals from your 'phone, mp3 player or computer, and to send these stronger signals out through a pair of speakers, giving a nice loud, clear, stereo sound. 
+</p>
+</div>
+<div id="outline-container-sec-1-1" class="outline-3 build">
+<h3 id="sec-1-1">Start small</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>When soldering a project together, it's best to start with the smallest physical components first. As with many projects, this will be your resistors. We've got a few different values we'll be using here. 
+</li>
+<li><b><b>Make sure you use the right ones in the right places!</b></b>
+</li>
+<li>You'll need:
+<ul class="org-ul">
+<li>2x 4r7 Resistors (Yellow, Purple, Gold, Gold)
+</li>
+<li>2x 10k Resistors (Brown, Black, Orange, Gold)
+</li>
+<li>2x 100k Resistors(Brown, Black, Yellow, Gold)
+</li>
+</ul>
+</li>
+<li>Remember when soldering to keep your soldered joints neat! You should be a pro at soldering after three years, but here's a few tips to remember:
+<ul class="org-ul">
+<li>The purpose of soldering is to join two metals together: The leg of the component, and the copper track on the PCB. This only works if <b><b>both</b></b> metals have been heated up before you try and put solder in to make the joint.
+</li>
+<li>After placing the soldering iron onto the PCB/leg, count to three in your head, then apply solder. This should be long enough to get the parts hot, but not so long that you burn the PCB tracks off. 
+</li>
+<li>Remember to use side-cutters after soldering to trim off the excess of the leg you no longer want. Before you do this, make sure that your components are fitted as tightly to the board as possible. You can always melt the solder again and use a long-nose plier to pull the component through a bit more if needed!
+</li>
+<li>A good soldered joint looks like a little volcano standing up slightly on the board. You shouldn't be able to see the drill-hole any more, and the solder shouldn't be spherical. 
+</li>
+</ul>
+</li>
+<li>Solder the resistors in standing on end, with the other leg draped down into the hole. This way, they'll take up less space on the PCB. When they're done, and you look at the PCB from the either end of the board (it's symetrical at this stage), it needs to look like this:
+</li>
+</ul>
+<p>
+<img src="./img/build/5.jpg" alt="5.jpg" />
+<img src="./img/build/6.jpg" alt="6.jpg" />
+</p>
+<ul class="org-ul">
+<li>Let's do the chip carrier next. ICs like our amplifier don't really like getting hot, so by using a chip carrier (which is essentially a block of plastic with some metal legs in it), we can avoid ever having to expose the chip to any heat at all.
+</li>
+<li>The chip carrier needs to go in the right way up. The Silkscreen in the component side of the PCB has a notch in it, as does the chip carrier (and the chip). Make sure the carrier sits flat against the PCB before you solder the first pin, and inspect it once its soldered. If need be, melt the solder and push the socket in so it sits as flat as possible. You don't want to need to de-solder all 8 pins if you get this wrong!
+</li>
+</ul>
+
+<div class="figure">
+<p><img src="./img/build/8.jpg" alt="8.jpg" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3 build">
+<h3 id="sec-1-2">Connecting Capacitors</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>Capacitors make up a large number of the components in our circuit, and perform a number of functions. As a stand-alone component, they build up a store of a small amount of electrical charge (measured in Farads), which is released into the circuit when needed. 
+</li>
+<li>There are two different types of capacitor; Electrolytic/polarised (the black circular ones), and non-polarised. The polarised variety must be connected the right way around (you'll notice a + on the PCB silkscreen) - the non-polarised ones can be mounted either way round. 
+</li>
+<li>Polarised capacitors have a row of minus (-) signs along the edge with the negative leg. Additionaly, before you use side-cutters on them, the positive leg is normally longer. 
+</li>
+<li>Start with the 470&mu;F capacitors (the largest), then the 100&mu;F capacitors, making sure you get them the right way around. These go either side of the IC, and both the value and orientation are clearly labelled.
+</li>
+</ul>
+
+<div class="figure">
+<p><img src="./img/build/10.jpg" alt="10.jpg" />
+</p>
+</div>
+<ul class="org-ul">
+<li>Add the lone 10&mu;F capacitor next&#x2026;
+</li>
+</ul>
+
+<div class="figure">
+<p><img src="./img/build/11.jpg" alt="11.jpg" />
+</p>
+</div>
+<ul class="org-ul">
+<li>Then the two 10nF non-polarised capacitors. While it doesn't matter which way round they go, it looks more professional if they're both the same way up. Try to get them standing up nice and straight, too.
+</li>
+</ul>
+
+<div class="figure">
+<p><img src="./img/build/12.jpg" alt="12.jpg" />
+</p>
+</div>
+<ul class="org-ul">
+<li>You've now completed the circuit components for the project. Next, we'll need to add the speakers, a battery clip and a socket to connect to your mobile.
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3" class="outline-3 assess">
+<h3 id="sec-1-3">BadgeIt - Build Stage 1</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>Take a photo of both sides of your PCB.
+</li>
+<li>Open your previous Word document, and add a new sub-title called, "Soldering".
+</li>
+<li>Add (and crop) the pictures of both sides of your board.
+</li>
+<li>Underneath, write a short paragraph explaining what you have done so far.
+</li>
+</ul>
+<p>
+<a href="index.html">Return to homepage</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="validation"></p>
+</div>
+</body>
+</html>

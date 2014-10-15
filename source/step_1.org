@@ -111,7 +111,7 @@ In a car, a circuit is needed to ensure that the airbags only deploy when there 
 :END:
 - In this project, you'll upcycle a product that would otherwise be thrown away into something that hopefully you'll be able to use for years to come. The picture above is a powerful stereo MP3 amplifier that has been discreetly hidden inside a coffee cup from the school canteen. 
 - You'll also learn about different types of materials that systems engineers can use to create new products, and how to choose wisely for a sustainable future for the planet.
-** Coding time
+** Learn it
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
