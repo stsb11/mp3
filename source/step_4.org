@@ -2,7 +2,7 @@
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 #+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
 #+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
-#+TITLE: Soldering Time
+#+TITLE: Making Noises
 #+AUTHOR: Stephen Brown
 
 #+BEGIN_HTML
@@ -11,7 +11,6 @@
 </div>
 #+END_HTML
 
-[[./img/build/22.jpg]]
 * COMMENT Use as a template
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -76,54 +75,42 @@
 :HTML_CONTAINER_CLASS: save
 :END:
 
-* First steps
+* Sound Theory
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-This project uses an IC (Integrated Circuit) chip containing many transistors and other components. These work together to amplify weak incoming signals from your 'phone, mp3 player or computer, and to send these stronger signals out through a pair of speakers, giving a nice loud, clear, stereo sound. 
-** Start small
+A biologist called [[http://simple.wikipedia.org/wiki/Thomas_Henry_Huxley][Thomas Huxley]] said that people should try to learn something about everything, and everything about something. As we're making a speaker system, its probably wise that we take a moment to consider how sound is produced by a speaker. This will have the added advantage of helping you study for GCSE Science.  
+** Making noises
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: build
+:HTML_CONTAINER_CLASS: learn
 :END:
-- When soldering a project together, it's best to start with the smallest physical components first. As with many projects, this will be your resistors. We've got a few different values we'll be using here. 
-- **Make sure you use the right ones in the right places!**
-- You'll need:
-  - 2x 4r7 Resistors (Yellow, Purple, Gold, Gold)
-  - 2x 10k Resistors (Brown, Black, Orange, Gold)
-  - 2x 100k Resistors(Brown, Black, Yellow, Gold)
-- Remember when soldering to keep your soldered joints neat! You should be a pro at soldering after three years, but here's a few tips to remember:
-  - The purpose of soldering is to join two metals together: The leg of the component, and the copper track on the PCB. This only works if **both** metals have been heated up before you try and put solder in to make the joint.
-  - After placing the soldering iron onto the PCB/leg, count to three in your head, then apply solder. This should be long enough to get the parts hot, but not so long that you burn the PCB tracks off. 
-  - Remember to use side-cutters after soldering to trim off the excess of the leg you no longer want. Before you do this, make sure that your components are fitted as tightly to the board as possible. You can always melt the solder again and use a long-nose plier to pull the component through a bit more if needed!
-  - A good soldered joint looks like a little volcano standing up slightly on the board. You shouldn't be able to see the drill-hole any more, and the solder shouldn't be spherical. 
-- Solder the resistors in standing on end, with the other leg draped down into the hole. This way, they'll take up less space on the PCB. When they're done, and you look at the PCB from the either end of the board (it's symetrical at this stage), it needs to look like this:
-[[./img/build/5.jpg]]
-[[./img/build/6.jpg]]
-- Let's do the chip carrier next. ICs like our amplifier don't really like getting hot, so by using a chip carrier (which is essentially a block of plastic with some metal legs in it), we can avoid ever having to expose the chip to any heat at all.
-- The chip carrier needs to go in the right way up. The Silkscreen in the component side of the PCB has a notch in it, as does the chip carrier (and the chip). Make sure the carrier sits flat against the PCB before you solder the first pin, and inspect it once its soldered. If need be, melt the solder and push the socket in so it sits as flat as possible. You don't want to need to de-solder all 8 pins if you get this wrong!
-[[./img/build/8.jpg]]
+- Sound is a mechanical wave; it needs a medium (e.g. air or water) to travel through. When an object (e.g. a tuning fork) vibrates, if pushes the air in front of it away from itself repeatedly. The pushed air molecules go on to push the particles they are near to, and in turn they push the next particles and so on.
+- The more aggressively the output source moves, the more the air is disturbed, and the louder the resulting sound. 
+- The faster the vibrations from thte sound source, the closer together the air pressure waves, and the higher the pitch of the sound to the person hearing it.
+- If you're interested in reading more, sound is explained really well over at [[http://www.physicsclassroom.com/class/sound/Lesson-1/Sound-is-a-Mechanical-Wave][the Physics Classroom]].
+** Speakers
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+[[./img/speaker_sys.jpg]]
+- A speaker attempts to reproduce recorded sounds, by matching the intensity and speed of the original sound wave. Humans can hear sound in the range of around 20Hz - 20kHz. The ability to hear the highest-pitched sounds fades slightly through adulthood. 
+- No single speaker can reproduce the full range of sound that humans can hear, so in hi-fi sound systems, there are a variety of different speakers used.
+- **Sub-woofers** are physically large speakers, which can create powerful sound pressure levels (due to their size), but cannot move fast enough to reproduce high frequencies. These are used to create powerful bass sounds, in the 20Hz-200Hz range.
+- **Mid-range drivers** are the most common type of speaker, and are used in the project you will create. They cover a wide range of the sound frequency range, from 300 to about 5000Hz, which contains the range of most musical instruments and human voice. Most TVs use a pair of these for their built-in speakers. 
+- A **Tweeter** is a high-frequency driver to produce high-pitched sounds (typically 2000Hz-20,000Hz), and are named after the sounds of birdsong. These are typically very small, so that they can move quickly. By combining different speakers in a sound system such as that found in a cinema, excellent sound reproduction can be achieved. 
+[[./img/speaker_pic.png]]
+- The most common type of speaker (a dynamic loudspeaker) is shown above. These work by the use of a permenant magnet (1) sat at the bottom of the speaker, which pulls/repels an electromagnet called the voicecoil (2) when a current is applied to it. This is held in place by a suspension (3) system, which keeps the coil centred in the gap in the magnet, and ensures the coil returns to a neutral position when there is no signal being sent to it. The voicecoil is glued to a paper diaphram (4), which is what pushes air particles as it is quickly turned on and off. 
 
-** Connecting Capacitors
+** Badget - Speaker Technology
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: build
+:HTML_CONTAINER_CLASS: test
 :END:
-- Capacitors make up a large number of the components in our circuit, and perform a number of functions. As a stand-alone component, they build up a store of a small amount of electrical charge (measured in Farads), which is released into the circuit when needed. 
-- There are two different types of capacitor; Electrolytic/polarised (the black circular ones), and non-polarised. The polarised variety must be connected the right way around (you'll notice a + on the PCB silkscreen) - the non-polarised ones can be mounted either way round. 
-- Polarised capacitors have a row of minus (-) signs along the edge with the negative leg. Additionaly, before you use side-cutters on them, the positive leg is normally longer. 
-- Start with the 470\mu{}F capacitors (the largest), then the 100\mu{}F capacitors, making sure you get them the right way around. These go either side of the IC, and both the value and orientation are clearly labelled.
-[[./img/build/10.jpg]]
-- Add the lone 10\mu{}F capacitor next...
-[[./img/build/11.jpg]]
-- Then the two 10nF non-polarised capacitors. While it doesn't matter which way round they go, it looks more professional if they're both the same way up. Try to get them standing up nice and straight, too.
-[[./img/build/12.jpg]]
-- You've now completed the circuit components for the project. Next, we'll need to add the speakers, a battery clip and a socket to connect to your mobile.
+- Open your Word document that you previously wrote about sustainability in, and add a new sub-heading: Sound.
+- Copy and paste the picture of the speaker system at the top of this section.
+- Underneath it, explain in your own words how a loudspeaker works.
+- Underneath this, identify which speaker is which in the photo you copied and pasted. For each:
+        - Say why you think that is. For instance, you might say that the top speaker in the left and right enclosures are tweeters, because they are very small.
+        - Explain what the benefit of having this type of speaker is.
+- Find another picture of a sound system online ([[http://www.argos.co.uk/][Argos]] have a good range), and idenfity the speakers in it.
 
-** BadgeIt - Build Stage 1
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: assess
-:END:
-- Take a photo of both sides of your PCB.
-- Open your previous Word document, and add a new sub-title called, "Soldering".
-- Add (and crop) the pictures of both sides of your board.
-- Underneath, write a short paragraph explaining what you have done so far.
-[[file:index.html][Return to homepage]]
+[[./index.html][Return to homepage]]

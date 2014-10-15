@@ -1,0 +1,127 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
+#+TITLE: Installation
+#+AUTHOR: Stephen Brown
+
+#+BEGIN_HTML
+<div class=ribbon>
+<a href="https://github.com/stsb11/mp3">Fork me on GitHub</a>
+</div>
+#+END_HTML
+
+
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+
+* Assembly
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+All the projects you've ever made were designed by the teaching team to ensure they fit together perfectly. As you're about to take something that was never designed to contain speakers (more likely to contain Pringles or coffee), you're going to need to be quite creative in order to get everything to fit together.
+
+** Speaker Mounting
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- In order to get the best from your speakers, they need to be securely mounted to your housing, and the speaker diaphram needs to have an unrestricted space in front of it. 
+- If your speaker isn't firmly stuck down, it will vibrate against the housing, and your speaker will buzz when in use, which will sound terrible. 
+- To secure the speaker, you could use...
+  - a hot glue gun. This can quickly get messy, and the glue sets very quickly. If you get a lot of glue on the speaker diaphram, it'll suppress your speaker volume and the quality of your audio, so be careful. The glue gun is also quite bulky, and difficult to get into confined spaces.
+  - Aryldite. This is an industrial-strength glue what is made by mixing a **small** amount of glue and its accompanying curing agent in equal measures, applying the mixture to the surfaces to be bonded and then clamping (gently) and leaving for about 15 minutes. This is an incredibly strong glue, and needs to be treated with respect!
+  - Always wear gloves and safety specs when glueing! 
+
+** Audio Socket
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- To mount the headphone socket, you'll need to make a **6mm** hole in the side of your case. While it's tempting to use a pencil, your case will last much longer, and look a great deal better if you use a drill. There are cordless drills in the department, as well as the pillar drills located in the classrooms. 
+- Ensure that the correct drill bit is installed before drilling - you can always make a small hole bigger, but you can't make a big hole smaller!-
+- Once you've made the hole, pop the socket through the hole, then screw on the retainer (a small, thin steel circular nut) to hold the socket in place. Tighten it up a little (don't go mad here!) with either long-nose pliers, or a slotted screwdriver while holding the plastic part of the socket with long-nose pliers to stop it spinning round.
+** PCB and battery
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- It's better if you can fix the PCB to something inside your housing, rather than having it rattle around. One way to do this is to mount the PCB (you'll find some unused holes on the PCB; remember that you don't need to use them all) on a scrap piece of MDF (you'll need to mark and drill holes in it first). 
+- Once mounted, you can then either use machine screws and nuts to hold down the PCB inside your housing, or hot glue. 
+- Your battery clip can either live inside or outside your housing, depending on your personal preference. I put mine outside, so I could conveniently take the battery in and out to turn the power on/off. 
+
+** BadgeIt - Assessment
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: assess
+:END:
+- Open your Evidence document.
+- Take photos of the exterior and (where possible) interior of your finished speaker, and add them to the bottom of your work.
+- Underneath these, add a sub-heading called "Product Evaluation". Write an evaluation of your work underneath this. You should include:
+  - What is good about your speaker
+  - What isn't
+  - Ways in which your speaker could be improved
+- Next, write a sub-heading of, "Performance evaluation". Underneath this, write a short evaluation of your performance in this unit. It should include:
+  - How well you managed your time in this project
+  - The areas you enjoyed and were most sucessful in
+  - Areas where you could have performed better
+  - Targets for yourself for the next project.
+
+[[file:index.html][Return to homepage]]

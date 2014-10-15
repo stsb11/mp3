@@ -25,23 +25,27 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-* [[./step_3.org][Lesson 3 - Noises]]
+* [[./step_3.org][Lesson 3 - Client Profiling]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-* [[file:step_4.html][Lesson 4 - Soldering step 1]]
+* [[./step_3.org][Lesson 4 - Noises]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-* [[./step_5.html][Lesson 5 - Wiring Loom]]
+* [[file:step_4.html][Lesson 5 - PCB Soldering]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-* [[./step_6.html][Lesson 6 - Input Socket]]
+* [[./step_5.html][Lesson 6 - Wiring Loom]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-* [[./step_7.html][Lesson 7 - Installation]]
+* [[./step_6.html][Lesson 7 - Input Socket]]
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+* [[./step_7.html][Lesson 8 - Installation]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:

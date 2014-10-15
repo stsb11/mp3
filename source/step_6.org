@@ -2,7 +2,7 @@
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 #+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
 #+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
-#+TITLE: Sock-et to me
+#+TITLE: Dressing up
 #+AUTHOR: Stephen Brown
 
 #+BEGIN_HTML
@@ -76,33 +76,45 @@
 :HTML_CONTAINER_CLASS: save
 :END:
 
-* Adding the input
+* Wiring
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-This is the last stage of the soldering. By the time you're done here, you'll be able to test your circuit by powering it up, and connecting it to any device with a headphone jack on it. 
-** Headphones
+Wires in electronic projects are one of the most common areas of product failure. Wires naturally move around, and eventually develop metal fatigue, which causes them to break suddenly. By properly preparing and "dressing" your wires, you can ensure your speaker will be durable, and last for many years to come. 
+** Speaker wires
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-[[./img/stereo_plug.jpg]]
-- When you look at a stereo headphone plug, you'll notice there are small insulated bands which break the plug into three areas.
-- The part at the pointed end is the audio signal for the left speaker.
-- The middle section carries the right audio channel.
-- The bottom part of the plug is the Ground (0V) connection. In order to work, the input signal (e.g. phone, TV, mp3 player) and the speaker need to have the negative ends of their power supplies tied together. 
-** Build it
+[[./img/wire_types.jpg]]
+- There are two kinds of wire we use in our electronics projects: multi-core and single-core.
+- Single-core wire is stiffer and more susceptible to metal fatigue. At the same time, it's far easier to poke a piece of single-core through a PCB hole, or into a speaker or switch.
+- Multi-core is far more flexible, as it is made of many thin strands which lay together inside the plastic insulation. Unfortunately, these tend to try and "escape" whwn you want to put them into PCB holes, potentially making them trickier to work with.
+- As we might need to move the wires around quite a bit in order to install them in our housing, we're going to use multi-core wire in our project.
+- At the moment, you may or may not know what you are going to use as the housing for your speaker system. You might need quite long wires, or just short ones. If you're not sure, then as a temporary measure, use about 10cm of wire when following these steps. 
+** The Wire
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: build
 :END:
 - **Read everything before you do anything**
-- The PCB is built so that you could connect a phone directly to the PCB using an on-board 3.5mm socket if you wanted to (like you've done in the past with the digital die and PIC fan projects). 
-- It's almost certainly going to be more convenient if you can have the 3.5mm jack (socket) mounted wherever you want on the outside of your product housing, though.
-- Fetch a 3.5mm stereo jack, and 3x 10cm pieces of multi-core wire. Ideally, in three different colours. As always, its more "correct" to use black for the ground wire, but it doesn't affect how the product works.
-- Connect a wire to each of the metal lugs as shown here, and solder them on:
-[[./img/build/19.jpg]]
-- Now, twist all three wires together like you did with the speakers, then solder them into the PCB, as shown here. Note that the black (common) wire is in the middle. In order to get the inputs the correct way around, make sure you run the **blue wire to the bottom connector** on the PCB. Otherwise, you'll have left audio coming out of the right speaker!
-[[./img/build/21.jpg]]
-- You've now completed the circuit. Connect a 9V battery, plug a test device into a sound source and you should have a working amplifier.
-- Remember that in order to get the full volume from your unit, it needs to be mounted inside an enclosure. Don't panic if you think it's a bit quiet at the moment!
+- We'll tackle the speaker wires first. Fetch 2x Red and 2x Black lengths of multi-core wire, and strip about 10mm of insulation from each end. The colour isn't particularly important, but its nicer to use the International colour convention of black for ground and red for power.
+[[./img/build/14.jpg]]
+- Solder the wires into the left and right speaker holes, as shown above. 
+- Try to get all the wire strands into the holes (you can always trim any stray strands with a side cutter, but its nicer if you don't need to).
+- Also try and ensure the insulation is butted up tightly to the PCB, so there's no risk of an electrical short later on, when the PCB is squeezed inside its housing.
+- At the moment, the solder you've used will have made the multi-core wire quite stiff; joints between PCBs and wires are the single most common area for failure. We can help reduce this by using the strain relief holes that are located next to each pair of speaker wires. Carefully poke each pair of wires through their nearest strain relief hole, and pull them through. 
+- Once done, twist the wire pairs together to keep them neat.
+- Repeat this process with a PP3 Battery clip, again using the strain hole. With the battery clip its easier to twist the wire pairs together first, then to feed it through the strain relief hole, then to solder the wires into the PCB.
+[[./img/build/15.jpg]]
+
+
+** Speak Up
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+- With the wiring complete, we can now attach our speakers. You can always replace the speakers yourself at home with something bigger, if you want. As long as they're 8\ohm speakers (this is written on the back), and not more than 2W, you should be fine. 
+- If you look on the back of the speaker, you'll see two small metal "lugs" that you'll be soldering wires onto. You'll also see that + and - are clearly marked, so you can tell where to connect your wires.
+- Pass the stripped end of the red wire through the + lug, wrap the loose end of the wire around the lug. Now use the soldering iron to solder the wire in place. Repeat with the black wire and the - end.
+- Do the same for the other speaker.
+[[./img/build/18.jpg]]
 
 [[file:index.html][Return to homepage]]

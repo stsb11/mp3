@@ -2,7 +2,7 @@
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 #+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
 #+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
-#+TITLE: Dressing up
+#+TITLE: Soldering Time
 #+AUTHOR: Stephen Brown
 
 #+BEGIN_HTML
@@ -76,45 +76,54 @@
 :HTML_CONTAINER_CLASS: save
 :END:
 
-* Wiring
+* First steps
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-Wires in electronic projects are one of the most common areas of product failure. Wires naturally move around, and eventually develop metal fatigue, which causes them to break suddenly. By properly preparing and "dressing" your wires, you can ensure your speaker will be durable, and last for many years to come. 
-** Speaker wires
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: learn
-:END:
-[[./img/wire_types.jpg]]
-- There are two kinds of wire we use in our electronics projects: multi-core and single-core.
-- Single-core wire is stiffer and more susceptible to metal fatigue. At the same time, it's far easier to poke a piece of single-core through a PCB hole, or into a speaker or switch.
-- Multi-core is far more flexible, as it is made of many thin strands which lay together inside the plastic insulation. Unfortunately, these tend to try and "escape" whwn you want to put them into PCB holes, potentially making them trickier to work with.
-- As we might need to move the wires around quite a bit in order to install them in our housing, we're going to use multi-core wire in our project.
-- At the moment, you may or may not know what you are going to use as the housing for your speaker system. You might need quite long wires, or just short ones. If you're not sure, then as a temporary measure, use about 10cm of wire when following these steps. 
-** The Wire
+This project uses an IC (Integrated Circuit) chip containing many transistors and other components. These work together to amplify weak incoming signals from your 'phone, mp3 player or computer, and to send these stronger signals out through a pair of speakers, giving a nice loud, clear, stereo sound. 
+** Start small
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: build
 :END:
-- **Read everything before you do anything**
-- We'll tackle the speaker wires first. Fetch 2x Red and 2x Black lengths of multi-core wire, and strip about 10mm of insulation from each end. The colour isn't particularly important, but its nicer to use the International colour convention of black for ground and red for power.
-[[./img/build/14.jpg]]
-- Solder the wires into the left and right speaker holes, as shown above. 
-- Try to get all the wire strands into the holes (you can always trim any stray strands with a side cutter, but its nicer if you don't need to).
-- Also try and ensure the insulation is butted up tightly to the PCB, so there's no risk of an electrical short later on, when the PCB is squeezed inside its housing.
-- At the moment, the solder you've used will have made the multi-core wire quite stiff; joints between PCBs and wires are the single most common area for failure. We can help reduce this by using the strain relief holes that are located next to each pair of speaker wires. Carefully poke each pair of wires through their nearest strain relief hole, and pull them through. 
-- Once done, twist the wire pairs together to keep them neat.
-- Repeat this process with a PP3 Battery clip, again using the strain hole. With the battery clip its easier to twist the wire pairs together first, then to feed it through the strain relief hole, then to solder the wires into the PCB.
-[[./img/build/15.jpg]]
+- When soldering a project together, it's best to start with the smallest physical components first. As with many projects, this will be your resistors. We've got a few different values we'll be using here. 
+- **Make sure you use the right ones in the right places!**
+- You'll need:
+  - 2x 4r7 Resistors (Yellow, Purple, Gold, Gold)
+  - 2x 10k Resistors (Brown, Black, Orange, Gold)
+  - 2x 100k Resistors(Brown, Black, Yellow, Gold)
+- Remember when soldering to keep your soldered joints neat! You should be a pro at soldering after three years, but here's a few tips to remember:
+  - The purpose of soldering is to join two metals together: The leg of the component, and the copper track on the PCB. This only works if **both** metals have been heated up before you try and put solder in to make the joint.
+  - After placing the soldering iron onto the PCB/leg, count to three in your head, then apply solder. This should be long enough to get the parts hot, but not so long that you burn the PCB tracks off. 
+  - Remember to use side-cutters after soldering to trim off the excess of the leg you no longer want. Before you do this, make sure that your components are fitted as tightly to the board as possible. You can always melt the solder again and use a long-nose plier to pull the component through a bit more if needed!
+  - A good soldered joint looks like a little volcano standing up slightly on the board. You shouldn't be able to see the drill-hole any more, and the solder shouldn't be spherical. 
+- Solder the resistors in standing on end, with the other leg draped down into the hole. This way, they'll take up less space on the PCB. When they're done, and you look at the PCB from the either end of the board (it's symetrical at this stage), it needs to look like this:
+[[./img/build/5.jpg]]
+[[./img/build/6.jpg]]
+- Let's do the chip carrier next. ICs like our amplifier don't really like getting hot, so by using a chip carrier (which is essentially a block of plastic with some metal legs in it), we can avoid ever having to expose the chip to any heat at all.
+- The chip carrier needs to go in the right way up. The Silkscreen in the component side of the PCB has a notch in it, as does the chip carrier (and the chip). Make sure the carrier sits flat against the PCB before you solder the first pin, and inspect it once its soldered. If need be, melt the solder and push the socket in so it sits as flat as possible. You don't want to need to de-solder all 8 pins if you get this wrong!
+[[./img/build/8.jpg]]
 
-
-** Speak Up
+** Connecting Capacitors
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: build
 :END:
-- With the wiring complete, we can now attach our speakers. You can always replace the speakers yourself at home with something bigger, if you want. As long as they're 8\ohm speakers (this is written on the back), and not more than 2W, you should be fine. 
-- If you look on the back of the speaker, you'll see two small metal "lugs" that you'll be soldering wires onto. You'll also see that + and - are clearly marked, so you can tell where to connect your wires.
-- Pass the stripped end of the red wire through the + lug, wrap the loose end of the wire around the lug. Now use the soldering iron to solder the wire in place. Repeat with the black wire and the - end.
-- Do the same for the other speaker.
-[[./img/build/18.jpg]]
+- Capacitors make up a large number of the components in our circuit, and perform a number of functions. As a stand-alone component, they build up a store of a small amount of electrical charge (measured in Farads), which is released into the circuit when needed. 
+- There are two different types of capacitor; Electrolytic/polarised (the black circular ones), and non-polarised. The polarised variety must be connected the right way around (you'll notice a + on the PCB silkscreen) - the non-polarised ones can be mounted either way round. 
+- Polarised capacitors have a row of minus (-) signs along the edge with the negative leg. Additionaly, before you use side-cutters on them, the positive leg is normally longer. 
+- Start with the 470\mu{}F capacitors (the largest), then the 100\mu{}F capacitors, making sure you get them the right way around. These go either side of the IC, and both the value and orientation are clearly labelled.
+[[./img/build/10.jpg]]
+- Add the lone 10\mu{}F capacitor next...
+[[./img/build/11.jpg]]
+- Then the two 10nF non-polarised capacitors. While it doesn't matter which way round they go, it looks more professional if they're both the same way up. Try to get them standing up nice and straight, too.
+[[./img/build/12.jpg]]
+- You've now completed the circuit components for the project. Next, we'll need to add the speakers, a battery clip and a socket to connect to your mobile.
 
+** BadgeIt - Build Stage 1
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: assess
+:END:
+- Take a photo of both sides of your PCB.
+- Open your previous Word document, and add a new sub-title called, "Soldering".
+- Add (and crop) the pictures of both sides of your board.
+- Underneath, write a short paragraph explaining what you have done so far.
 [[file:index.html][Return to homepage]]

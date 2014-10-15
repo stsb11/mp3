@@ -1,14 +1,20 @@
 #+STARTUP:indent
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 #+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+BEGIN_COMMENT
+#+STYLE: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+STYLE: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+END_COMMENT
 #+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
-#+TITLE: Making Noises
+#+TITLE: Client Profiling
 #+AUTHOR: Stephen Brown
 
 #+BEGIN_HTML
 <div class=ribbon>
 <a href="https://github.com/stsb11/mp3">Fork me on GitHub</a>
 </div>
+<center>
+</center>
 #+END_HTML
 
 * COMMENT Use as a template
@@ -75,42 +81,50 @@
 :HTML_CONTAINER_CLASS: save
 :END:
 
-* Sound Theory
+e* Introduction
+[[file:img/pic.jpg]]
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: intro
+:END:
+** What are PIC chips?
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+Peripheral Interface Controllers are small silicon chips which can be programmed to perform useful tasks.
+In school, we tend to use Genie branded chips, like the C08 model you will use in this project. Others (e.g. PICAXE) are available.
+PIC chips allow you connect different inputs (e.g. switches) and outputs (e.g. LEDs, motors and speakers), and to control them using flowcharts.
+Chips such as these can be found everywhere in consumer electronic products, from toasters to cars. 
+
+While they might not look like much, there is more computational power in a single PIC chip used in school than there was in the space shuttle that went to the moon in the 60's!
+** When would I use a PIC chip?
+Imagine you wanted to make a flashing bike light; using an LED and a switch alone, you'd need to manually push and release the button to get the flashing effect. A PIC chip could be programmed to turn the LED off and on once a second.
+In a board game, you might want to have an electronic dice to roll numbers from 1 to 6 for you. 
+In a car, a circuit is needed to ensure that the airbags only deploy when there is a sudden change in speed, AND the passenger is wearing their seatbelt, AND the front or rear bumper has been struck. PIC chips can carry out their instructions very quickly, performing around 1000 instructions per second - as such, they can react far more quickly than a person can. 
+* Introduction
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-A biologist called [[http://simple.wikipedia.org/wiki/Thomas_Henry_Huxley][Thomas Huxley]] said that people should try to learn something about everything, and everything about something. As we're making a speaker system, its probably wise that we take a moment to consider how sound is produced by a speaker. This will have the added advantage of helping you study for GCSE Science.  
-** Making noises
+** Who on Earth?
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- Sound is a mechanical wave; it needs a medium (e.g. air or water) to travel through. When an object (e.g. a tuning fork) vibrates, if pushes the air in front of it away from itself repeatedly. The pushed air molecules go on to push the particles they are near to, and in turn they push the next particles and so on.
-- The more aggressively the output source moves, the more the air is disturbed, and the louder the resulting sound. 
-- The faster the vibrations from thte sound source, the closer together the air pressure waves, and the higher the pitch of the sound to the person hearing it.
-- If you're interested in reading more, sound is explained really well over at [[http://www.physicsclassroom.com/class/sound/Lesson-1/Sound-is-a-Mechanical-Wave][the Physics Classroom]].
-** Speakers
+- Before sitting down to design and manufacture a product, designers and engineers need to think carefully about the type of person the product is going to be purchased and used by. They might consider:
+  - Age: Is this something a baby would need? A teenager? An adult? A pensioner? How will knowing this change my approach to designing this product?
+  - Gender: Is this something that males or females are more likely to buy, or something that's for everyone? When deciding how something will look when its finished, this is a significant factor. You can see this in how things are advertised on TV; Dove and Lynx anti-perspirant are advertised in very different ways, for instance. 
+  - Income level: How wealthy is our consumer? If they're very young, perhaps they can't afford something that costs more than £10, we we need to get our build-cost as low as possible. If we're designing luxury cars, then money is no real object, and we can select the very best components and materials to make our product from. 
+  - Lifestyle: Are we making something for people who are very sporty and active? If so, the product needs to be easily transportable, perhaps? If we're making something for a user with a physical disability that limits their movement, perhaps it needs to have large buttons to make it easier to use.
+  - Business or individual? If we're designing something for a company to issue to an employee to perform a task (e.g. a litter-picking claw), then how the product looks is largely unimportant - the product simply needs to perform its primary function well. If we're making something ornamental for someone to have in their home, then how it looks (and also how well in blends in with the home environment) is an important detail.
+* BadgeIt - Profiler
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: learn
+:HTML_CONTAINER_CLASS: activity
 :END:
-[[./img/speaker_sys.jpg]]
-- A speaker attempts to reproduce recorded sounds, by matching the intensity and speed of the original sound wave. Humans can hear sound in the range of around 20Hz - 20kHz. The ability to hear the highest-pitched sounds fades slightly through adulthood. 
-- No single speaker can reproduce the full range of sound that humans can hear, so in hi-fi sound systems, there are a variety of different speakers used.
-- **Sub-woofers** are physically large speakers, which can create powerful sound pressure levels (due to their size), but cannot move fast enough to reproduce high frequencies. These are used to create powerful bass sounds, in the 20Hz-200Hz range.
-- **Mid-range drivers** are the most common type of speaker, and are used in the project you will create. They cover a wide range of the sound frequency range, from 300 to about 5000Hz, which contains the range of most musical instruments and human voice. Most TVs use a pair of these for their built-in speakers. 
-- A **Tweeter** is a high-frequency driver to produce high-pitched sounds (typically 2000Hz-20,000Hz), and are named after the sounds of birdsong. These are typically very small, so that they can move quickly. By combining different speakers in a sound system such as that found in a cinema, excellent sound reproduction can be achieved. 
-[[./img/speaker_pic.png]]
-- The most common type of speaker (a dynamic loudspeaker) is shown above. These work by the use of a permenant magnet (1) sat at the bottom of the speaker, which pulls/repels an electromagnet called the voicecoil (2) when a current is applied to it. This is held in place by a suspension (3) system, which keeps the coil centred in the gap in the magnet, and ensures the coil returns to a neutral position when there is no signal being sent to it. The voicecoil is glued to a paper diaphram (4), which is what pushes air particles as it is quickly turned on and off. 
-
-** Badget - Speaker Technology
+** Your turn
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: test
 :END:
-- Open your Word document that you previously wrote about sustainability in, and add a new sub-heading: Sound.
-- Copy and paste the picture of the speaker system at the top of this section.
-- Underneath it, explain in your own words how a loudspeaker works.
-- Underneath this, identify which speaker is which in the photo you copied and pasted. For each:
-        - Say why you think that is. For instance, you might say that the top speaker in the left and right enclosures are tweeters, because they are very small.
-        - Explain what the benefit of having this type of speaker is.
-- Find another picture of a sound system online ([[http://www.argos.co.uk/][Argos]] have a good range), and idenfity the speakers in it.
+- Open your evidence document, and add a new sub-heading: Target Audience Profile
+- Write a short profile of the target audience for your speaker. 
+- If you include three points, you'll be awarded the silver badge.
+- If you write a more detailed piece, you'll be awarded the gold level.
 
-[[./index.html][Return to homepage]]
+[[file:index.html][Return to homepage]]
