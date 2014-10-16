@@ -145,7 +145,7 @@ In a car, a circuit is needed to ensure that the airbags only deploy when there 
 :HTML_CONTAINER_CLASS: test
 :END:
 - Open your Sustainability document that you created in the previous task
-- Write short definitions of the terms, "Social", "Moral" and "Environmental/Sustainabile"
+- Write short definitions of the terms, "Social", "Moral" and "Environmental/Sustainability"
 - Choose one of the following products, and write an analysis of it in terms of its SMES. 
     - Humane Mousetrap
     - Automatic curtain openers (push a button to open/close)
