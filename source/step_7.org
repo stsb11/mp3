@@ -11,7 +11,7 @@
 </div>
 #+END_HTML
 
-[[./img/build/22.jpg]]
+[[./img/build/33.jpg]]
 * COMMENT Use as a template
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -101,7 +101,7 @@ This is the last stage of the soldering. By the time you're done here, you'll be
 - Connect a wire to each of the metal lugs as shown here, and solder them on:
 [[./img/build/19.jpg]]
 - Now, twist all three wires together like you did with the speakers, then solder them into the PCB, as shown here. Note that the black (common) wire is in the middle. In order to get the inputs the correct way around, make sure you run the **blue wire to the bottom connector** on the PCB. Otherwise, you'll have left audio coming out of the right speaker!
-[[./img/build/21.jpg]]
+[[./img/build/36.jpg]]
 - You've now completed the circuit. Connect a 9V battery, plug a test device into a sound source and you should have a working amplifier.
 - Remember that in order to get the full volume from your unit, it needs to be mounted inside an enclosure. Don't panic if you think it's a bit quiet at the moment!
 
