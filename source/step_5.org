@@ -11,7 +11,7 @@
 </div>
 #+END_HTML
 
-[[./img/build/22.jpg]]
+[[./img/build/33.jpg]]
 * COMMENT Use as a template
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -97,11 +97,11 @@ This project uses an IC (Integrated Circuit) chip containing many transistors an
   - Remember to use side-cutters after soldering to trim off the excess of the leg you no longer want. Before you do this, make sure that your components are fitted as tightly to the board as possible. You can always melt the solder again and use a long-nose plier to pull the component through a bit more if needed!
   - A good soldered joint looks like a little volcano standing up slightly on the board. You shouldn't be able to see the drill-hole any more, and the solder shouldn't be spherical. 
 - Solder the resistors in standing on end, with the other leg draped down into the hole. This way, they'll take up less space on the PCB. When they're done, and you look at the PCB from the either end of the board (it's symetrical at this stage), it needs to look like this:
-[[./img/build/5.jpg]]
-[[./img/build/6.jpg]]
+[[./img/build/27.jpg]]
+[[./img/build/28.jpg]]
 - Let's do the chip carrier next. ICs like our amplifier don't really like getting hot, so by using a chip carrier (which is essentially a block of plastic with some metal legs in it), we can avoid ever having to expose the chip to any heat at all.
 - The chip carrier needs to go in the right way up. The Silkscreen in the component side of the PCB has a notch in it, as does the chip carrier (and the chip). Make sure the carrier sits flat against the PCB before you solder the first pin, and inspect it once its soldered. If need be, melt the solder and push the socket in so it sits as flat as possible. You don't want to need to de-solder all 8 pins if you get this wrong!
-[[./img/build/8.jpg]]
+[[./img/build/29.jpg]]
 
 ** Connecting Capacitors
 :PROPERTIES:
@@ -111,11 +111,11 @@ This project uses an IC (Integrated Circuit) chip containing many transistors an
 - There are two different types of capacitor; Electrolytic/polarised (the black circular ones), and non-polarised. The polarised variety must be connected the right way around (you'll notice a + on the PCB silkscreen) - the non-polarised ones can be mounted either way round. 
 - Polarised capacitors have a row of minus (-) signs along the edge with the negative leg. Additionaly, before you use side-cutters on them, the positive leg is normally longer. 
 - Start with the 470\mu{}F capacitors (the largest), then the 100\mu{}F capacitors, making sure you get them the right way around. These go either side of the IC, and both the value and orientation are clearly labelled.
-[[./img/build/10.jpg]]
+[[./img/build/30.jpg]]
 - Add the lone 10\mu{}F capacitor next...
-[[./img/build/11.jpg]]
+[[./img/build/37.jpg]]
 - Then the two 10nF non-polarised capacitors. While it doesn't matter which way round they go, it looks more professional if they're both the same way up. Try to get them standing up nice and straight, too.
-[[./img/build/12.jpg]]
+[[./img/build/31.jpg]]
 - You've now completed the circuit components for the project. Next, we'll need to add the speakers, a battery clip and a socket to connect to your mobile.
 
 ** BadgeIt - Build Stage 1
