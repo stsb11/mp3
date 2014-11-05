@@ -1,0 +1,130 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+BEGIN_COMMENT
+#+STYLE: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+STYLE: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+END_COMMENT
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
+#+TITLE: Client Profiling
+#+AUTHOR: Stephen Brown
+
+#+BEGIN_HTML
+<div class=ribbon>
+<a href="https://github.com/stsb11/mp3">Fork me on GitHub</a>
+</div>
+<center>
+</center>
+#+END_HTML
+
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+
+e* Introduction
+[[file:img/pic.jpg]]
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: intro
+:END:
+** What are PIC chips?
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+Peripheral Interface Controllers are small silicon chips which can be programmed to perform useful tasks.
+In school, we tend to use Genie branded chips, like the C08 model you will use in this project. Others (e.g. PICAXE) are available.
+PIC chips allow you connect different inputs (e.g. switches) and outputs (e.g. LEDs, motors and speakers), and to control them using flowcharts.
+Chips such as these can be found everywhere in consumer electronic products, from toasters to cars. 
+
+While they might not look like much, there is more computational power in a single PIC chip used in school than there was in the space shuttle that went to the moon in the 60's!
+** When would I use a PIC chip?
+Imagine you wanted to make a flashing bike light; using an LED and a switch alone, you'd need to manually push and release the button to get the flashing effect. A PIC chip could be programmed to turn the LED off and on once a second.
+In a board game, you might want to have an electronic dice to roll numbers from 1 to 6 for you. 
+In a car, a circuit is needed to ensure that the airbags only deploy when there is a sudden change in speed, AND the passenger is wearing their seatbelt, AND the front or rear bumper has been struck. PIC chips can carry out their instructions very quickly, performing around 1000 instructions per second - as such, they can react far more quickly than a person can. 
+* Introduction
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Who on Earth?
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Before sitting down to design and manufacture a product, designers and engineers need to think carefully about the type of person the product is going to be purchased and used by. They might consider:
+  - Age: Is this something a baby would need? A teenager? An adult? A pensioner? How will knowing this change my approach to designing this product?
+  - Gender: Is this something that males or females are more likely to buy, or something that's for everyone? When deciding how something will look when its finished, this is a significant factor. You can see this in how things are advertised on TV; Dove and Lynx anti-perspirant are advertised in very different ways, for instance. 
+  - Income level: How wealthy is our consumer? If they're very young, perhaps they can't afford something that costs more than £10, we we need to get our build-cost as low as possible. If we're designing luxury cars, then money is no real object, and we can select the very best components and materials to make our product from. 
+  - Lifestyle: Are we making something for people who are very sporty and active? If so, the product needs to be easily transportable, perhaps? If we're making something for a user with a physical disability that limits their movement, perhaps it needs to have large buttons to make it easier to use.
+  - Business or individual? If we're designing something for a company to issue to an employee to perform a task (e.g. a litter-picking claw), then how the product looks is largely unimportant - the product simply needs to perform its primary function well. If we're making something ornamental for someone to have in their home, then how it looks (and also how well in blends in with the home environment) is an important detail.
+* BadgeIt - Profiler
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Your turn
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+- Open your evidence document, and add a new sub-heading: Target Audience Profile
+- Write a short profile of the target audience for your speaker. 
+- If you include three points, you'll be awarded the silver badge.
+- If you write a more detailed piece, you'll be awarded the gold level.
+
+[[file:index.html][Return to homepage]]
