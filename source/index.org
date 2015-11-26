@@ -17,35 +17,23 @@
 </div>
 #+END_HTML
 [[./img/speaker.jpg]]
-* [[file:step_1.html][Lesson 1 - Renewable and non-renewable sources]]
+* [[./step_4.html][Lesson 1 - Noises]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-* [[file:step_2.html][Lesson 2 - Social, Moral, Environmental and Sustainability Issues (SMES)]]
+* [[file:step_5.html][Lesson 2 - PCB Soldering]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-* [[./step_3.html][Lesson 3 - Client Profiling]]
+* [[./step_6.html][Lesson 3 - Wiring Loom]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-* [[./step_4.html][Lesson 4 - Noises]]
+* [[./step_7.html][Lesson 4 - Input Socket]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-* [[file:step_5.html][Lesson 5 - PCB Soldering]]
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
-:END:
-* [[./step_6.html][Lesson 6 - Wiring Loom]]
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
-:END:
-* [[./step_7.html][Lesson 7 - Input Socket]]
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
-:END:
-* [[./step_8.html][Lesson 8 - Installation]]
+* [[./step_8.html][Lesson 5 - Installation]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
