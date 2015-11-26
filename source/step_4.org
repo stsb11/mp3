@@ -86,7 +86,7 @@ A biologist called [[http://simple.wikipedia.org/wiki/Thomas_Henry_Huxley][Thoma
 :END:
 - Sound is a mechanical wave; it needs a medium (e.g. air or water) to travel through. When an object (e.g. a tuning fork) vibrates, if pushes the air in front of it away from itself repeatedly. The pushed air molecules go on to push the particles they are near to, and in turn they push the next particles and so on.
 - The more aggressively the output source moves, the more the air is disturbed, and the louder the resulting sound. 
-- The faster the vibrations from the sound source, the closer together the air pressure waves, and the higher the pitch of the sound to the person hearing it.
+- The faster the vibrations from thte sound source, the closer together the air pressure waves, and the higher the pitch of the sound to the person hearing it.
 - If you're interested in reading more, sound is explained really well over at [[http://www.physicsclassroom.com/class/sound/Lesson-1/Sound-is-a-Mechanical-Wave][the Physics Classroom]].
 ** Speakers
 :PROPERTIES:
