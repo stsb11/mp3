@@ -11,7 +11,7 @@
 
 #+BEGIN_HTML
 <div class=ribbon>
-<a href="https://github.com/stsb11/mp3">Fork me on GitHub</a>
+<a href="https://github.com/stcd11/mp3">Fork me on GitHub</a>
 </div>
 <center>
 <img src='img/speaker.jpg' width=33%>
