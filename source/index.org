@@ -16,7 +16,7 @@
 <a href="https://github.com/stsb11/mp3">Fork me on GitHub</a>
 </div>
 #+END_HTML
-[[./img/speaker.jpg]]
+[[./img/Complete.jpg]]
 * [[./step_4.html][Lesson 1 - Noises]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
