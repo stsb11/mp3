@@ -13,10 +13,14 @@
 
 #+BEGIN_HTML
 <div class=ribbon>
-<a href="https://github.com/stsb11/mp3">Fork me on GitHub</a>
+<a href="https://github.com/stcd11/mp3">Fork me on GitHub</a>
 </div>
 #+END_HTML
+<<<<<<< HEAD
+[[./img/Complete.jpg]]
+=======
 [[./img/speaker.jpg]]
+>>>>>>> stsb11/master
 * [[./step_4.html][Lesson 1 - Noises]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity

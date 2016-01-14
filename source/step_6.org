@@ -7,11 +7,11 @@
 
 #+BEGIN_HTML
 <div class=ribbon>
-<a href="https://github.com/stsb11/mp3">Fork me on GitHub</a>
+<a href="https://github.com/stcd11/mp3">Fork me on GitHub</a>
 </div>
 #+END_HTML
 
-[[./img/build/33.jpg]]
+[[./img/33.jpg]]
 * COMMENT Use as a template
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -113,6 +113,8 @@ Wires in electronic projects are one of the most common areas of product failure
 :HTML_CONTAINER_CLASS: build
 :END:
 - With the wiring complete, we can now attach our speakers. You can always replace the speakers yourself at home with something bigger, if you want. As long as they're 8\ohm speakers (this is written on the back), and not more than 2W, you should be fine. 
+- *Before you attach the speaker, make sure you run the wires through the correct panel. You will not be able to do this after the speakers are soldered, unless you de-solder them.*
+[[./img/Wirethroughpanel.jpg]]
 - If you look on the back of the speaker, you'll see two small metal "lugs" that you'll be soldering wires onto. You'll also see that + and - are clearly marked, so you can tell where to connect your wires.
 - Pass the stripped end of the red wire through the + lug, wrap the loose end of the wire around the lug. Now use the soldering iron to solder the wire in place. Repeat with the black wire and the - end.
 - Do the same for the other speaker.
